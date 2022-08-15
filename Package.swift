@@ -5,7 +5,7 @@
      name: "MUDClientResources",
      platforms: [
          .iOS(.v13),
-         .macOS(.v11),
+         .macOS(.v10_10),
      ],
      products: [
          .library(
