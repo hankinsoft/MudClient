@@ -17,6 +17,7 @@
      targets: [
          .target(
              name: "MUDClientResources",
+             path: "./",
              resources: [.copy("./Connecitons")]
          ),
     ]
