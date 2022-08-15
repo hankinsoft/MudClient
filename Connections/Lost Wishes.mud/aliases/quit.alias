@@ -1,0 +1,11 @@
+{
+  "action" : "\/\/ Disconnect rather than quit.\ncommand('disconnect');",
+  "matchString" : "quit",
+  "matchType" : 0,
+  "matchFromStartOfLine" : true,
+  "title" : "quit",
+  "caseSpecific" : false,
+  "isDebug" : false,
+  "command" : "",
+  "disabled" : false
+}

@@ -1,0 +1,11 @@
+{
+  "action" : "\/\/ Send a who and get the results\nvar results = commandAndReadFromServer('who2');\nresults = results.split(\/\\r?\\n\/);\n\nconst regEx = \/^[a-zA-Z]\/;\n\nfor (const line of results)\n{\n    if(!regEx.test(line))\n    {\n        continue;\n    }\n\n    var words = line.split(\/\\s+\/);\n\n\t\/\/ First word is the name\n\tvar user = words.shift();\n    if('Name' == user)\n    {\n        continue;\n    }\n\n    processForAutocomplete(user);\n}",
+  "matchString" : "who2",
+  "matchType" : 0,
+  "matchFromStartOfLine" : true,
+  "title" : "Autocomplete-who2",
+  "caseSpecific" : false,
+  "isDebug" : false,
+  "command" : "",
+  "disabled" : false
+}

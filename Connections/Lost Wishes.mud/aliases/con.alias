@@ -1,0 +1,11 @@
+{
+  "action" : "command('consider all');",
+  "matchString" : "con",
+  "matchType" : 0,
+  "matchFromStartOfLine" : false,
+  "title" : "con",
+  "caseSpecific" : false,
+  "isDebug" : false,
+  "command" : "consider all",
+  "disabled" : false
+}

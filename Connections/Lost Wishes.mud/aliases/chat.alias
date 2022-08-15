@@ -1,0 +1,11 @@
+{
+  "action" : "command('[chat \\x');",
+  "matchString" : "chat",
+  "matchType" : 0,
+  "matchFromStartOfLine" : true,
+  "title" : "chat",
+  "caseSpecific" : false,
+  "isDebug" : false,
+  "command" : "",
+  "disabled" : false
+}

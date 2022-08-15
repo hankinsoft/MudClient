@@ -1,0 +1,11 @@
+{
+  "action" : "\/\/ Send a who and get the results\nvar results = commandAndReadFromServer('inventory');\n\n\/\/ Strip up to Using:\nvar usingIndex = results.lastIndexOf('Using:');\nif(usingIndex)\n{\n   results = results.substring(usingIndex + 'Using:'.length);\n}\n\n\/\/ Remove anything in round brackets, angle brackets or square brackets\nresults = results.replace(\/ *\\([^)]*\\) *\/g, \"\");\nresults = results.replace(\/ *\\<[^>]*\\> *\/g, \"\");\nresults = results.replace(\/ *\\[[^]]*\\] *\/g, \"\");\n\n\/\/ Remove starting\/ending > (takes away any prompts)\nresults = results.replace(\/^(\\s|>)+|(\\s|>)+$\/gm,'');\n\n\/\/ Remove *'s (usually quest items, or keeps)\nresults = results.replaceAll('*', ' ');\n\nresults = results.replace('Carrying:', ' ');\n\n\/\/ Add our carrying to the autocomplete\nprocessForAutocomplete(results);",
+  "matchString" : "(i|inv|inventory)",
+  "matchType" : 0,
+  "matchFromStartOfLine" : true,
+  "title" : "Autocomplete-inventory",
+  "caseSpecific" : false,
+  "isDebug" : false,
+  "command" : "",
+  "disabled" : false
+}

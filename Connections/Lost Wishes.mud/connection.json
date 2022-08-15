@@ -1,0 +1,9 @@
+{
+  "port" : 5555,
+  "password" : "",
+  "automaticallyReconnect" : false,
+  "loginScript" : "",
+  "host" : "lost.wishes.net",
+  "connectionId" : "CB9DC304-0F0B-47BC-B601-B2ACC94D5EBA",
+  "user" : ""
+}
